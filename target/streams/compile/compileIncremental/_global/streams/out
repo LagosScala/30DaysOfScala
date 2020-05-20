@@ -1,0 +1,55 @@
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/src/main/scala/example/Hello.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(/Users/abdulrahmanabdulkarim/ScalaProjects/30DaysOfScala/src/main/scala/example/Hello.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set(/Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/target/scala-2.13/classes/example/Greeting.class, /Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/target/scala-2.13/classes/example/Hello$.class, /Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/target/scala-2.13/classes/example/Hello$delayedInit$body.class, /Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/target/scala-2.13/classes/example/Hello.class)[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(example.Greeting, example.Hello)[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set(/Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/src/main/scala/example/Hello.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(example.Greeting, example.Hello)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/abdulrahmanabdulkarim/ScalaProjects/30DaysOfScala/src/main/scala/example/Hello.scala, /Users/abdulrahmanabdulkarim/ScalaProjects/30daysofscala/src/main/scala/example/Hello.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: example.Greeting, example.Hello[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding example.Hello by example.Greeting[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/abdulrahmanabdulkarim/ScalaProjects/30DaysOfScala/target/scala-2.13/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.2[0m
+[0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.13:1.3.5:compile for Scala 2.13.2[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 2f78ecef for Scala compiler version 2.13.2[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/abdulrahmanabdulkarim/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/abdulrahmanabdulkarim/ScalaProjects/30DaysOfScala/target/scala-2.13/classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.977242134 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from example.Greeting...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: example.Greeting[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding example.Hello by example.Greeting[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(example.Greeting, example.Hello)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(example.Greeting,ModifiedNames(changes = UsedName(finalize,[Default]))) invalidates 2 classes due to The example.Greeting has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(example.Greeting, example.Hello)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from example.Hello...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: example.Hello[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(example.Hello)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(example.Hello,ModifiedNames(changes = UsedName(finalize,[Default]))) invalidates 1 classes due to The example.Hello has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(finalize,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(example.Hello)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
