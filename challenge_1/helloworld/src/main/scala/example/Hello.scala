@@ -5,5 +5,5 @@ object Hello extends Greeting with App {
 }
 
 trait Greeting {
-  lazy val greeting: String = "Welcome to 30 days of Scala "
+  lazy val greeting: String = "Welcome to 30 days of Scala"
 }
