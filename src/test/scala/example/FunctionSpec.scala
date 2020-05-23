@@ -19,8 +19,8 @@ class FunctionSpec extends WordSpec{
     assert(isOdd)
   }
 
-  "The intMultiples function should return the list of multiples of an integer" in {
-    val multiples = Function.intMultiples(12)
-    assert(multiples == List(1, 2, 3, 4, 6, 12))
+  "The intMultiples function should return the list of multiples of an integer between 1 and 50" in {
+    val multiples = Function.intMultiples(6)
+    assert(multiples == List(6, 12, 18, 24, 30, 36, 42, 48))
   }
 }
