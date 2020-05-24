@@ -1,1 +1,201 @@
 2020.05.22 01:45:05 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\30DaysOfScala\samplescalaproject'
+2020.05.22 01:45:05 INFO  time: initialize in 0.9s
+2020.05.22 01:45:07 INFO  no build target: using presentation compiler with only scala-library
+2020.05.22 01:45:12 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.22 01:47:05 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 20:15:10 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\30DaysOfScala\samplescalaproject'
+2020.05.23 20:15:11 INFO  time: initialize in 1.03s
+2020.05.23 20:15:17 INFO  skipping build import with status 'Requested'
+2020.05.23 20:15:17 INFO  no build target: using presentation compiler with only scala-library
+2020.05.23 20:15:21 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 20:16:03 INFO  shutting down Metals
+2020.05.23 22:29:39 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\30DaysOfScala\samplescalaproject'
+2020.05.23 22:29:40 INFO  time: initialize in 0.7s
+2020.05.23 22:29:41 INFO  skipping build import with status 'Requested'
+2020.05.23 22:29:41 INFO  no build target: using presentation compiler with only scala-library
+2020.05.23 22:29:45 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+May 23, 2020 10:31:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving object Hello
+java.util.concurrent.CompletionException: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving object Hello
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving object Hello
+
+2020.05.23 22:31:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 22:43:17 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 22:58:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 23:15:31 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+May 23, 2020 11:16:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IndexOutOfBoundsException: 1
+java.util.concurrent.CompletionException: java.lang.IndexOutOfBoundsException: 1
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: 1
+	at scala.reflect.internal.util.BatchSourceFile.lineToOffset(SourceFile.scala:188)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition(AutoImports.scala:67)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition$(AutoImports.scala:44)
+	at scala.meta.internal.pc.MetalsGlobal.autoImportPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$lzycompute$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:141)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+2020.05.23 23:19:41 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.23 23:22:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.23 23:24:26 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\FunctionsSpec.scala
+2020.05.23 23:25:41 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 23, 2020 11:26:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IndexOutOfBoundsException: 1
+java.util.concurrent.CompletionException: java.lang.IndexOutOfBoundsException: 1
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: 1
+	at scala.reflect.internal.util.BatchSourceFile.lineToOffset(SourceFile.scala:188)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition(AutoImports.scala:67)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition$(AutoImports.scala:44)
+	at scala.meta.internal.pc.MetalsGlobal.autoImportPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$lzycompute$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:141)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+2020.05.23 23:31:46 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:33:33 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:35:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.23 23:38:56 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:39:07 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:40:48 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:45:01 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.23 23:48:28 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.23 23:50:31 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 23:52:35 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.23 23:53:09 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.24 00:00:01 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:05:39 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:11:49 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:21:13 WARN  code navigation does not work for the file 'C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala' because it doesn't belong to a build target.
+2020.05.24 00:21:13 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:21:16 WARN  code navigation does not work for the file 'C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.05.24 00:21:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:28:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:38:55 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:41:53 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:43:37 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:45:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:46:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:12:00 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 01:19:07 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:22:21 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:29:02 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:30:12 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:31:54 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 02:05:29 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 10:03:47 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 10:10:06 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 11:12:13 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 11:14:29 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 11:16:07 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 11:17:39 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 12:11:46 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 14:54:27 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 15:03:20 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:04:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:39:30 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:41:01 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:42:53 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:44:11 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 15:45:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:59:11 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:00:29 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:02:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:14:52 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 16:22:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 16:23:02 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:25:11 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:26:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:28:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:29:49 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
