@@ -1,0 +1,6 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mFunctionSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The isOddNumber method should return true if number is odd[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The isOddNumber method should return false if number is even[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The intMultiple method should return a list containing the right results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The intMultiple method should return an empty list if user enters 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- The intMultiple method should return an empty list when user enters 50 or above[0m[0m
