@@ -9,7 +9,7 @@ class FunctionsSpec extends WordSpec {
     }
 
     "The funtion returns a list of multiples of a number x " in {
-        val multiples = Functions.intMultiples(1)
-        assert(multiples == List(1, 2, 3, 4, 5))
+        val multiples = Functions.intMultiples(10)
+        assert(multiples == List(10, 20, 30, 40, 50))
     }
 }

@@ -9,10 +9,15 @@ object Functions {
     }
 
     def intMultiples(x: Int): List[Int] = {
+        var value: Int = 0
         var result = List(x)
-        for (c <- 2 until 6) {
-            result = c*x :: result
+        var multiplier: Int = 2
+        while (value < 50) {
+            value = multiplier * x
+            multiplier+=1
+            result = value :: result
         }
+
         result.reverse
     }
 
