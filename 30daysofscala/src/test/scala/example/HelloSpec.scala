@@ -4,7 +4,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
 class HelloSpec extends AnyFlatSpec with Matchers {
-  "The Hello object" should "say hello" in {
-    Hello.greeting shouldEqual "hello"
+  "The Hello object" should "Welcome to 30 days of Scala" in {
+    Hello.greeting shouldEqual "Welcome to 30 days of Scala"
   }
 }
