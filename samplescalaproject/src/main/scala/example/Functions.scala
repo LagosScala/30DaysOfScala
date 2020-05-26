@@ -7,7 +7,7 @@ object Functions {
           x
         else
           y
-    }
+    } 
 
     def powerOfTwo(x: Int): Double = math.pow(x, 2)
 

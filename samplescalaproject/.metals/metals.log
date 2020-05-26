@@ -210,3 +210,19 @@ Caused by: java.lang.IndexOutOfBoundsException: 1
 2020.05.24 16:54:56 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
 2020.05.24 16:56:44 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
 2020.05.24 18:13:51 INFO  shutting down Metals
+2020.05.24 18:16:31 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.24 18:16:32 INFO  time: initialize in 1.29s
+2020.05.24 18:16:45 INFO  no build target: using presentation compiler with only scala-library
+2020.05.24 18:16:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 18:16:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.24 18:16:56 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 18:16:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.25 15:35:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.25 15:53:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.25 15:53:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.26 15:30:25 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.26 15:30:26 INFO  time: initialize in 0.84s
+2020.05.26 15:30:31 INFO  skipping build import with status 'Requested'
+2020.05.26 15:30:31 INFO  no build target: using presentation compiler with only scala-library
+2020.05.26 15:30:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.26 15:30:50 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
