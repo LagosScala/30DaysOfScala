@@ -23,3 +23,17 @@ object Functions {
 
     }
 }
+
+class Person (var name: String, var age: Int, var nationality: String) {
+  override def toString(): String = 
+          
+        "[info.name = " + name +  
+               ", info.age = " + age +", info.nationality = " + nationality +"]" 
+}
+
+object Person {
+    def apply(info: Person): String = {
+      s" ${info.name}  ${info.age} ${info.nationality}"  
+  }
+  
+}

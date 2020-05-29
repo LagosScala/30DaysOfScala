@@ -226,3 +226,91 @@ Caused by: java.lang.IndexOutOfBoundsException: 1
 2020.05.26 15:30:31 INFO  no build target: using presentation compiler with only scala-library
 2020.05.26 15:30:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
 2020.05.26 15:30:50 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.27 21:05:39 INFO  shutting down Metals
+2020.05.28 14:12:15 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.28 14:12:15 INFO  time: initialize in 0.77s
+2020.05.28 14:12:17 INFO  skipping build import with status 'Requested'
+2020.05.28 14:12:17 INFO  no build target: using presentation compiler with only scala-library
+2020.05.28 14:12:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 14:26:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 14:48:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 14:48:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 14:48:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 14:49:01 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 15:38:12 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 28, 2020 3:38:41 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+2020.05.28 15:38:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 15:38:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 15:42:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:44:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 15:47:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:48:07 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:51:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:52:25 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:53:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:56:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:57:54 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:16:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:20:06 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:21:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:22:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:25:20 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 16:26:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:26:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:28:39 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:35:49 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:37:06 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:37:19 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 16:37:35 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:43:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.28 16:46:57 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:50:56 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 28, 2020 7:29:51 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+2020.05.28 19:29:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:30:01 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:30:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:33:24 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:40:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:40:55 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:00:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:04:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:08:02 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:12:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:16:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 20:20:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:24:37 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.05.28 20:25:16 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:27:34 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.05.28 20:27:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 20:27:51 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:33:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:33:41 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:37:31 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:38:08 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:40:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:44:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:46:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:46:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:48:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:50:55 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:53:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:54:39 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:54:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:56:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:27:17 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala' because it doesn't belong to a build target.
+2020.05.28 21:39:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 21:41:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 21:43:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:44:12 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:46:35 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:48:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:50:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:53:13 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.05.28 21:53:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:53:37 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 23:58:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.29 00:00:16 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 29, 2020 12:00:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4644

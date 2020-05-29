@@ -3,6 +3,7 @@ package example
 import org.scalatest.WordSpec
 
 
+
 class FunctionsSpecs extends WordSpec {
 
     "The max function should return the highest value between two integers" in {
@@ -25,4 +26,16 @@ class FunctionsSpecs extends WordSpec {
         val multiplesOf = Functions.intMultiples(2)
         assert(multiplesOf == List(2,4,6,8,10,12,14,16,18))
     }
+
+       "The object Person should take variable parameters of type String and Int and yield result values in string" in {
+        val person = new Person (name = "Senior", age = 19, nationality = "Nigeria")
+ 
+        println(Person(person))
+
+        
+
+
+}
+
+
 }
