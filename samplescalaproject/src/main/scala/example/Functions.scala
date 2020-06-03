@@ -12,7 +12,7 @@ object Functions {
     def powerOfTwo(x: Int): Double = math.pow(x, 2)
 
     def isOddNumber(x: Int): Boolean = {
-        if(x % 2 == 1)
+        if(x % 2 != 0)
           true
         else
           false  
@@ -33,7 +33,16 @@ class Person (var name: String, var age: Int, var nationality: String) {
 
 object Person {
     def apply(info: Person): String = {
-      s" ${info.name}  ${info.age} ${info.nationality}"  
+      s"Hi. I am ${info.name}from ${info.nationality}, and I am ${info.age} years old! "  
   }
   
 }
+
+
+
+
+case class Person (name: String = "John", age: Int = 21, bvn: Long = 6330322178L) 
+
+
+
+

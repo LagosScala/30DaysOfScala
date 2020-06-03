@@ -27,15 +27,13 @@ class FunctionsSpecs extends WordSpec {
         assert(multiplesOf == List(2,4,6,8,10,12,14,16,18))
     }
 
-       "The object Person should take variable parameters of type String and Int and yield result values in string" in {
-        val person = new Person (name = "Senior", age = 19, nationality = "Nigeria")
- 
-        println(Person(person))
+      
 
-        
-
-
-}
+       
+      }
+            
 
 
-}
+
+
+
