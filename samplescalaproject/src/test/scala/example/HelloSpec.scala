@@ -25,18 +25,17 @@ class PersonSpec extends AnyFlatSpec with Matchers {
 
 }
 
-case class PersonSpecTest() extends AnyFlatSpec with Matchers {
+case class PersonOwnSpecTest() extends AnyFlatSpec with Matchers {
  
- 
-  val person = Person("Ify")
-  val per = Person("Ify")
- "the Person case class" should "be serializable using the"  in {
+ "the PersonOwn case class parameters" should "be serializable using the"  in {
    
-   assert(person.equals(per))
+   assert(name.isInstanceOf[Serializable] == true)
+   assert(age.isInstanceOf[Serializable] == true)
+   assert(bvn.isInstanceOf[Serializable] == true)
  } 
   "Person.unapply method" should "be called on an instance to return an option of tupples by creating an instance of the tuple using 'val' key word" in {
 
-  val tupleOpt = Person()
+  val tupleOpt = PersonOwn()
 
   }
              

@@ -853,3 +853,14 @@ Caused by: java.lang.IndexOutOfBoundsException: 1
 2020.06.03 23:35:50 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
 2020.06.03 23:36:51 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
 2020.06.03 23:37:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 17:00:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.04 17:45:11 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.04 18:03:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.04 18:06:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:06:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:07:00 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:09:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 04, 2020 6:11:05 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.04 18:11:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:13:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala

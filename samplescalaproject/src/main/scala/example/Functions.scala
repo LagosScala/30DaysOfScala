@@ -41,7 +41,14 @@ object Person {
 
 
 
-case class Person (name: String = "John", age: Int = 21, bvn: Long = 6330322178L) 
+case class PersonOwn (name: String = "John", age: Int = 21, bvn: Long = 6330322178L) 
+
+sealed trait Base
+
+  case object name extends Base 
+  case object age extends Base
+  case object bvn extends Base
+
 
 
 
