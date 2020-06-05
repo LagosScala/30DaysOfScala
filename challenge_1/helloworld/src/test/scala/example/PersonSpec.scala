@@ -12,7 +12,7 @@ class PersonSpec extends FunSpec {
 
     it("returns tuples when unapply method is called on a case object") {
         val person = Person.Person("Sayo", 99, 1234567890)
-        assert( Person.Person.unapply(person).isInstanceOf[Tuple3[String, Int, Long]] == true)
+        assert( Person.Person.unapply(person).isInstanceOf[Option[_] == true)
     }
 
 }
