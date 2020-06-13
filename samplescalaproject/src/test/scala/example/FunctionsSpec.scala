@@ -27,7 +27,16 @@ class FunctionsSpecs extends WordSpec {
         assert(multiplesOf == List(2,4,6,8,10,12,14,16,18))
     }
 
-      
+      "The sting2Int function should return integer values if the strings can be coverted to integers" in {
+        assert(Point("10", "20") == Point(10, 20))
+    
+      }
+
+      "The string2Int function should return zero(0) if None is returned due to invalid input values"  in {
+          assert(Point("_", "_") == Point(0, 0))
+      }
+
+         
 
        
       }

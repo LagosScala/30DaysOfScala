@@ -42,5 +42,15 @@ case class PersonOwnSpecTest() extends AnyFlatSpec with Matchers {
 }
 
 
+case object Lang extends AnyFlatSpec with Matchers {
+  val result = s"Lang language is good"  // create a string and assign it to an instance of result
 
+  
+"the case object Lang" should "pattern match and return a string" in {
+
+ assert(Lang.toString == result)
+
+}
+
+}
 
