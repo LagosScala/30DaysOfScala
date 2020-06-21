@@ -25,20 +25,16 @@ class PersonSpec extends AnyFlatSpec with Matchers {
 
 }
 
-case class PersonOwnSpecTest() extends AnyFlatSpec with Matchers {
+case object PersonOwnSpecTest extends AnyFlatSpec with Matchers {
  
  "the PersonOwn case class parameters" should "be serializable using the"  in {
    
-   assert(name.isInstanceOf[Serializable] == true)
-   assert(age.isInstanceOf[Serializable] == true)
-   assert(bvn.isInstanceOf[Serializable] == true)
+  val anotherPerson = PersonOwn("TY", 32, 34222233L) 
+  assert(anotherPerson.isInstanceOf[Serializable] == true)
+  
+
  } 
-  "Person.unapply method" should "be called on an instance to return an option of tupples by creating an instance of the tuple using 'val' key word" in {
-
-  val tupleOpt = PersonOwn()
-
-  }
-             
+         
 }
 
 
@@ -54,3 +50,19 @@ case object Lang extends AnyFlatSpec with Matchers {
 
 }
 
+class HOFSpec extends AnyFlatSpec with Matchers {
+
+  val list: List[Int]  = List(-2,-1,2,3,4)
+
+  "the foldLeft HOF" should "sum the elements in the List" in {
+        
+        assert(HOF.sum(list) == 6)
+  }
+
+    "the getNegativeIndex created using the zipWithIndex transformer" should "return the index of the first negative value in the list" in{
+
+      assert(HOF.getNegativeIndex(list) == Some(0))
+    }    
+       
+  
+}

@@ -23,7 +23,8 @@ object Functions {
     def intMultiples(x: Int): List[Int]= {
         List.range(1, 10).map(_*x)
 
-    }
+    }  
+     
 }
 
 class Person (var name: String, var age: Int, var nationality: String) {
@@ -41,16 +42,11 @@ object Person {
 }
 
 
+case class PersonOwn (name: String, age: Int, bvn: Long) {
 
+val personOwn = PersonOwn("Ayo", 23, 2233444222L)
 
-case class PersonOwn (name: String = "John", age: Int = 21, bvn: Long = 6330322178L) 
-
-sealed trait Base
-
-  case object name extends Base 
-  case object age extends Base
-  case object bvn extends Base
-
+}
 
 
 case class Point(x: Int, y: Int)
@@ -88,6 +84,31 @@ object CaseClassTest extends App  {
   case _       => "Not within the language Lang"    // throw Exception if not within the Lang language        
  }
 }
+
+object HOF {
+  //the leftFold HOF is use to create a function that sums elements in a list
+
+   def sum(xs: List[Int]): Int = xs.foldLeft(0)(_ + _)
+   
+
+   // use a for comprehension to extract the first index of the negative value in the list 
+   // then return the Int(index) using the "headOption" if a negative value is present or return None if empty
+
+   def getNegativeIndex(xs: List[Int]): Option[Int] = {
+
+    for ((x, count) <- xs.zipWithIndex if x < 0) yield(count)
+   }.headOption
+
+
+
+}
+
+      
+    
+      
+     
+   
+     
 
 
 

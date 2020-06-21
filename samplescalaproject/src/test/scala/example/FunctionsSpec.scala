@@ -36,9 +36,10 @@ class FunctionsSpecs extends WordSpec {
           assert(Point("_", "_") == Point(0, 0))
       }
 
-         
 
        
+       
+        
       }
             
 
