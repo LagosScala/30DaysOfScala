@@ -1,0 +1,1269 @@
+2020.05.22 01:45:05 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\30DaysOfScala\samplescalaproject'
+2020.05.22 01:45:05 INFO  time: initialize in 0.9s
+2020.05.22 01:45:07 INFO  no build target: using presentation compiler with only scala-library
+2020.05.22 01:45:12 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.22 01:47:05 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 20:15:10 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\30DaysOfScala\samplescalaproject'
+2020.05.23 20:15:11 INFO  time: initialize in 1.03s
+2020.05.23 20:15:17 INFO  skipping build import with status 'Requested'
+2020.05.23 20:15:17 INFO  no build target: using presentation compiler with only scala-library
+2020.05.23 20:15:21 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 20:16:03 INFO  shutting down Metals
+2020.05.23 22:29:39 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\30DaysOfScala\samplescalaproject'
+2020.05.23 22:29:40 INFO  time: initialize in 0.7s
+2020.05.23 22:29:41 INFO  skipping build import with status 'Requested'
+2020.05.23 22:29:41 INFO  no build target: using presentation compiler with only scala-library
+2020.05.23 22:29:45 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+May 23, 2020 10:31:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving object Hello
+java.util.concurrent.CompletionException: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving object Hello
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: scala.reflect.internal.Symbols$CyclicReference: illegal cyclic reference involving object Hello
+
+2020.05.23 22:31:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 22:43:17 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 22:58:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 23:15:31 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+May 23, 2020 11:16:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IndexOutOfBoundsException: 1
+java.util.concurrent.CompletionException: java.lang.IndexOutOfBoundsException: 1
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: 1
+	at scala.reflect.internal.util.BatchSourceFile.lineToOffset(SourceFile.scala:188)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition(AutoImports.scala:67)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition$(AutoImports.scala:44)
+	at scala.meta.internal.pc.MetalsGlobal.autoImportPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$lzycompute$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:141)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+2020.05.23 23:19:41 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.23 23:22:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.23 23:24:26 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\FunctionsSpec.scala
+2020.05.23 23:25:41 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 23, 2020 11:26:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IndexOutOfBoundsException: 1
+java.util.concurrent.CompletionException: java.lang.IndexOutOfBoundsException: 1
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: 1
+	at scala.reflect.internal.util.BatchSourceFile.lineToOffset(SourceFile.scala:188)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition(AutoImports.scala:67)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition$(AutoImports.scala:44)
+	at scala.meta.internal.pc.MetalsGlobal.autoImportPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$lzycompute$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:141)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+2020.05.23 23:31:46 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:33:33 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:35:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.23 23:38:56 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:39:07 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:40:48 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.23 23:45:01 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.23 23:48:28 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.23 23:50:31 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.23 23:52:35 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.23 23:53:09 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.24 00:00:01 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:05:39 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:11:49 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:21:13 WARN  code navigation does not work for the file 'C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala' because it doesn't belong to a build target.
+2020.05.24 00:21:13 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:21:16 WARN  code navigation does not work for the file 'C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.05.24 00:21:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:28:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 00:38:55 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:41:53 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:43:37 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:45:15 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 00:46:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:12:00 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 01:19:07 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:22:21 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:29:02 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:30:12 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 01:31:54 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 02:05:29 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 10:03:47 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 10:10:06 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 11:12:13 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 11:14:29 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 11:16:07 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 11:17:39 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 12:11:46 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 14:54:27 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 15:03:20 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:04:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:39:30 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:41:01 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:42:53 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:44:11 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 15:45:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 15:59:11 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:00:29 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:02:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:14:52 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 16:22:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 16:23:02 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:25:11 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:26:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:28:34 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:29:49 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:31:02 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:35:21 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 16:37:16 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.24 16:49:30 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.24 16:50:47 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.24 16:52:06 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.24 16:52:23 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.24 16:53:18 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.24 16:54:56 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.24 16:56:44 WARN  no build target for: C:\Users\USER\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.24 18:13:51 INFO  shutting down Metals
+2020.05.24 18:16:31 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.24 18:16:32 INFO  time: initialize in 1.29s
+2020.05.24 18:16:45 INFO  no build target: using presentation compiler with only scala-library
+2020.05.24 18:16:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.24 18:16:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.24 18:16:56 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.24 18:16:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.25 15:35:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.25 15:53:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.25 15:53:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.26 15:30:25 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.26 15:30:26 INFO  time: initialize in 0.84s
+2020.05.26 15:30:31 INFO  skipping build import with status 'Requested'
+2020.05.26 15:30:31 INFO  no build target: using presentation compiler with only scala-library
+2020.05.26 15:30:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.26 15:30:50 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.27 21:05:39 INFO  shutting down Metals
+2020.05.28 14:12:15 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.28 14:12:15 INFO  time: initialize in 0.77s
+2020.05.28 14:12:17 INFO  skipping build import with status 'Requested'
+2020.05.28 14:12:17 INFO  no build target: using presentation compiler with only scala-library
+2020.05.28 14:12:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 14:26:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 14:48:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 14:48:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 14:48:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 14:49:01 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 15:38:12 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 28, 2020 3:38:41 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+2020.05.28 15:38:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 15:38:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 15:42:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:44:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 15:47:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:48:07 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:51:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:52:25 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:53:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:56:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 15:57:54 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:16:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:20:06 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:21:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:22:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:25:20 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 16:26:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:26:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:28:39 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:35:49 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:37:06 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:37:19 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 16:37:35 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:43:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.28 16:46:57 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 16:50:56 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 28, 2020 7:29:51 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -1
+2020.05.28 19:29:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:30:01 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:30:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:33:24 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:40:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 19:40:55 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:00:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:04:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:08:02 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:12:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:16:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 20:20:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:24:37 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.05.28 20:25:16 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:27:34 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.05.28 20:27:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.28 20:27:51 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:33:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:33:41 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:37:31 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:38:08 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:40:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:44:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:46:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:46:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:48:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:50:55 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:53:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:54:39 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 20:54:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 20:56:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:27:17 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala' because it doesn't belong to a build target.
+2020.05.28 21:39:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 21:41:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 21:43:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:44:12 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:46:35 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:48:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:50:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:53:13 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.05.28 21:53:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.28 21:53:37 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.28 23:58:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.29 00:00:16 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+May 29, 2020 12:00:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4644
+2020.05.29 01:29:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.29 01:30:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.29 10:18:29 INFO  shutting down Metals
+2020.05.30 21:19:10 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.30 21:19:11 INFO  time: initialize in 0.73s
+2020.05.30 21:19:12 INFO  skipping build import with status 'Requested'
+2020.05.30 21:19:12 INFO  no build target: using presentation compiler with only scala-library
+2020.05.30 21:19:17 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.30 21:19:17 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+May 30, 2020 9:19:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2020.05.30 21:19:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.30 21:19:32 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.30 21:21:10 INFO  shutting down Metals
+2020.05.31 13:05:14 INFO  started: Metals version 0.9.0 in workspace 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject'
+2020.05.31 13:05:15 INFO  time: initialize in 0.84s
+2020.05.31 13:05:16 INFO  skipping build import with status 'Requested'
+2020.05.31 13:05:16 INFO  no build target: using presentation compiler with only scala-library
+2020.05.31 13:05:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.31 13:05:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:05:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.31 13:08:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.31 13:08:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.31 13:10:44 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:14:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:17:07 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+2020.05.31 13:20:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:23:08 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:28:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:32:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:33:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:34:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:45:59 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.05.31 13:47:30 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:48:07 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:50:25 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Hello.scala
+2020.05.31 13:54:19 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:55:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 13:58:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:00:20 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:00:50 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:04:30 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:08:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:11:43 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.05.31 14:12:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:13:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:22:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:36:06 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:36:49 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:38:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:40:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:48:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 14:56:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.31 19:17:52 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.05.31 19:18:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:20:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:21:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:23:17 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:24:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:25:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:27:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 19:34:08 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:15:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:15:31 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:15:54 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:16:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:17:00 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:18:07 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:19:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:25:37 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:25:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:28:56 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:30:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:35:07 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:36:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:36:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:37:11 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:41:20 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:44:14 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:45:44 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.05.31 20:45:44 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:46:57 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:47:49 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.05.31 20:55:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.31 21:15:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.05.31 21:16:15 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\FunctionsSpec.scala
+Jun 01, 2020 9:38:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3979
+2020.06.01 09:39:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 09:39:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 09:41:19 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 10:12:32 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 10:20:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 10:23:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 10:30:24 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 20:42:26 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.01 20:56:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.01 20:57:44 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.01 20:58:30 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 01, 2020 9:01:17 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.01 21:02:16 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:03:04 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala' because it doesn't belong to a build target.
+2020.06.01 21:03:14 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:03:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:08:12 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:09:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:12:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:14:19 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 01, 2020 9:14:30 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.01 21:15:14 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:17:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:19:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:21:09 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:21:30 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.01 21:24:24 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.01 21:25:35 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:25:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:26:55 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:29:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.01 21:33:48 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:36:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.01 21:37:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 08:54:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 08:57:57 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 09:01:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 14:09:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 14:14:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 14:16:48 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 14:17:37 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 14:18:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 14:20:41 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 14:22:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 02, 2020 2:23:06 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+Jun 02, 2020 2:23:10 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.02 14:23:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 14:25:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 14:26:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 14:29:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 15:01:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 15:02:32 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 15:02:57 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 15:07:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 905)
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 905)
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 905)
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 905)
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 905)
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 905)
+2020.06.02 15:11:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Array[String]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 893, 893, 906)
+2020.06.02 15:14:42 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 15:15:01 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 15:15:09 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 15:18:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 15:20:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:07:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:08:48 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:09:55 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:16:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:17:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:26:37 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:28:42 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 02, 2020 6:29:01 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+Jun 02, 2020 6:29:22 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.02 18:29:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:29:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 18:31:42 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 02, 2020 6:32:05 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+Jun 02, 2020 6:32:14 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.02 18:32:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+Jun 02, 2020 9:38:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9388
+Jun 02, 2020 9:38:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9390
+Jun 02, 2020 9:38:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9389
+Jun 02, 2020 9:38:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9391
+2020.06.02 21:40:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 23:14:24 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 23:15:35 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+Jun 02, 2020 11:22:08 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jun 02, 2020 11:22:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.HoverProvider.typedHoverTreeAt(HoverProvider.scala:233)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:24)
+
+Jun 02, 2020 11:22:20 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jun 02, 2020 11:22:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+2020.06.02 23:25:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 23:28:39 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 23:30:25 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 23:39:02 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 23:39:59 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.02 23:56:03 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.02 23:57:21 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala' because it doesn't belong to a build target.
+2020.06.02 23:57:57 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 01:56:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 01:56:25 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 01:56:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 01:58:11 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:34:40 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:41:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:42:03 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:42:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:45:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 12:45:47 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 12:47:51 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:53:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 12:58:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 03, 2020 1:01:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1606)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.groupNeedsParens$1(TreeSyntax.scala:111)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.p(TreeSyntax.scala:126)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.$anonfun$syntaxTree$1(TreeSyntax.scala:552)
+	at scala.meta.prettyprinters.Syntax$$anon$1.apply(Syntax.scala:9)
+	at scala.meta.internal.prettyprinters.TreeSyntax$.$anonfun$apply$1(TreeSyntax.scala:1018)
+	at scala.meta.prettyprinters.Syntax$$anon$1.apply(Syntax.scala:9)
+	at scala.meta.prettyprinters.Api$XtensionSyntax.syntax(Api.scala:11)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.$anonfun$apply$4(DocumentSymbolProvider.scala:182)
+	at scala.Option.fold(Option.scala:251)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:182)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:112)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.newOwner$1(DocumentSymbolProvider.scala:95)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:166)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.newOwner$1(DocumentSymbolProvider.scala:95)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:100)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:112)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.symbols(DocumentSymbolProvider.scala:43)
+	at scala.meta.internal.metals.DocumentSymbolProvider.documentSymbols(DocumentSymbolProvider.scala:27)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$documentSymbols$1(ScalaPresentationCompiler.scala:141)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+	... 3 more
+
+2020.06.03 13:01:08 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 03, 2020 1:02:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1606)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.groupNeedsParens$1(TreeSyntax.scala:111)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.p(TreeSyntax.scala:126)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.$anonfun$syntaxTree$1(TreeSyntax.scala:552)
+	at scala.meta.prettyprinters.Syntax$$anon$1.apply(Syntax.scala:9)
+	at scala.meta.internal.prettyprinters.TreeSyntax$.$anonfun$apply$1(TreeSyntax.scala:1018)
+	at scala.meta.prettyprinters.Syntax$$anon$1.apply(Syntax.scala:9)
+	at scala.meta.prettyprinters.Api$XtensionSyntax.syntax(Api.scala:11)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.$anonfun$apply$4(DocumentSymbolProvider.scala:182)
+	at scala.Option.fold(Option.scala:251)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:182)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:112)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.newOwner$1(DocumentSymbolProvider.scala:95)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:166)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.newOwner$1(DocumentSymbolProvider.scala:95)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:100)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:112)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.symbols(DocumentSymbolProvider.scala:43)
+	at scala.meta.internal.metals.DocumentSymbolProvider.documentSymbols(DocumentSymbolProvider.scala:27)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$documentSymbols$1(ScalaPresentationCompiler.scala:141)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+	... 3 more
+
+Jun 03, 2020 1:02:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+java.util.concurrent.CompletionException: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1606)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.scalameta.invariants.InvariantFailedException: invariant failed:
+when verifying og.categories.intersect[String](ig.categories).nonEmpty
+found that og.categories.intersect[String](ig.categories).nonEmpty is false
+where ig = Literal
+where og = SimpleTyp
+	at org.scalameta.invariants.InvariantFailedException$.raise(Exceptions.scala:19)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.groupNeedsParens$1(TreeSyntax.scala:111)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.p(TreeSyntax.scala:126)
+	at scala.meta.internal.prettyprinters.TreeSyntax$SyntaxInstances.$anonfun$syntaxTree$1(TreeSyntax.scala:552)
+	at scala.meta.prettyprinters.Syntax$$anon$1.apply(Syntax.scala:9)
+	at scala.meta.internal.prettyprinters.TreeSyntax$.$anonfun$apply$1(TreeSyntax.scala:1018)
+	at scala.meta.prettyprinters.Syntax$$anon$1.apply(Syntax.scala:9)
+	at scala.meta.prettyprinters.Api$XtensionSyntax.syntax(Api.scala:11)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.$anonfun$apply$4(DocumentSymbolProvider.scala:182)
+	at scala.Option.fold(Option.scala:251)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:182)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:112)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.newOwner$1(DocumentSymbolProvider.scala:95)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:166)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.newOwner$1(DocumentSymbolProvider.scala:95)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:100)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1(SimpleTraverser.scala:5)
+	at scala.meta.transversers.SimpleTraverser.$anonfun$apply$1$adapted(SimpleTraverser.scala:5)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.meta.transversers.SimpleTraverser.apply(SimpleTraverser.scala:5)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.continue$1(DocumentSymbolProvider.scala:91)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.apply(DocumentSymbolProvider.scala:112)
+	at scala.meta.internal.metals.DocumentSymbolProvider$SymbolTraverser.symbols(DocumentSymbolProvider.scala:43)
+	at scala.meta.internal.metals.DocumentSymbolProvider.documentSymbols(DocumentSymbolProvider.scala:27)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$documentSymbols$1(ScalaPresentationCompiler.scala:141)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
+	... 3 more
+
+2020.06.03 13:03:28 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:05:23 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:07:34 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:10:16 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:14:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:15:02 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:17:36 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 13:19:18 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Map[Int,example.Customer]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 1158, 1158, 1176)
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Map[Int,example.Customer]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 1158, 1158, 1176)
+2020.06.03 13:23:42 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Map[Int,example.Customer]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 1236, 1236, 1254)
+2020.06.03 13:24:31 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 13:24:46 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+something's wrong: no file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala in Map[Int,example.Customer]RangePosition(file:///c%3A/Users/USER/Documents/Scala/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala, 1238, 1238, 1256)
+2020.06.03 13:26:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 13:29:42 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+Jun 03, 2020 1:29:55 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.06.03 13:33:15 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 13:36:53 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 13:39:58 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 16:30:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 16:32:06 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 16:32:29 WARN  code navigation does not work for the file 'C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala' because it doesn't belong to a build target.
+2020.06.03 16:32:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 16:34:43 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+Jun 03, 2020 4:38:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14009
+2020.06.03 16:39:21 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 16:40:13 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 16:42:15 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 16:42:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 16:44:26 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 21:10:42 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 03, 2020 9:11:47 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+Jun 03, 2020 9:11:56 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+Jun 03, 2020 9:12:05 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.03 21:12:39 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 21:14:33 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 21:28:01 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\Function2.scala
+Jun 03, 2020 9:28:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.IndexOutOfBoundsException: 1
+java.util.concurrent.CompletionException: java.lang.IndexOutOfBoundsException: 1
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:36)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IndexOutOfBoundsException: 1
+	at scala.reflect.internal.util.BatchSourceFile.lineToOffset(SourceFile.scala:188)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition(AutoImports.scala:67)
+	at scala.meta.internal.pc.AutoImports.autoImportPosition$(AutoImports.scala:44)
+	at scala.meta.internal.pc.MetalsGlobal.autoImportPosition(MetalsGlobal.scala:25)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$lzycompute$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.importPosition$1(CompletionProvider.scala:68)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:141)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+2020.06.03 21:28:51 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\Function2.scala
+2020.06.03 21:29:25 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 21:29:54 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\Function2.scala
+2020.06.03 21:30:52 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 23:35:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 23:35:50 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.03 23:36:51 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.03 23:37:45 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 17:00:22 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.04 17:45:11 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.04 18:03:38 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+2020.06.04 18:06:05 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:06:29 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:07:00 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:09:27 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\main\scala\example\Functions.scala
+Jun 04, 2020 6:11:05 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: String index out of range: -10
+2020.06.04 18:11:10 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.04 18:13:04 WARN  no build target for: C:\Users\USER\Documents\Scala\30DaysOfScala\samplescalaproject\src\test\scala\example\HelloSpec.scala
+2020.06.07 00:40:14 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.07 00:40:16 INFO  time: initialize in 2.01s
+2020.06.07 00:40:33 INFO  no build target: using presentation compiler with only scala-library
+2020.06.07 00:40:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.07 00:42:46 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Hello.scala
+2020.06.07 00:42:53 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.07 00:43:07 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+Jun 07, 2020 12:52:49 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.06.07 19:57:20 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.07 19:57:20 INFO  shutting down Metals
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@7dcfb07a rejected from java.util.concurrent.ThreadPoolExecutor@3be16c50[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 1]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020.06.09 00:16:25 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.09 00:16:29 INFO  time: initialize in 3.69s
+2020.06.09 00:16:33 INFO  skipping build import with status 'Requested'
+2020.06.09 00:16:33 INFO  no build target: using presentation compiler with only scala-library
+2020.06.09 00:16:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.09 00:17:13 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.09 00:17:41 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.09 00:18:48 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.09 00:20:01 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Hello.scala
+2020.06.09 00:20:51 INFO  shutting down Metals
+2020.06.12 17:37:57 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.12 17:38:01 INFO  time: initialize in 3.97s
+2020.06.12 17:38:03 INFO  skipping build import with status 'Requested'
+2020.06.12 17:38:03 INFO  no build target: using presentation compiler with only scala-library
+2020.06.12 17:38:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 17:59:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 17:59:36 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 17:59:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 18:00:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 18:00:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 18:00:13 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 18:00:19 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 18:00:34 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 18:00:44 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:01:09 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:01:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:01:15 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:01:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:01:28 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:33 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:41 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:43 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:44 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:50 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:03:52 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:28 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:34 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:42 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:54 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:04:57 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:05:52 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:05:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:07 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:09 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:11 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:15 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:20 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:24 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:25 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:28 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:29 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:06:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:07:09 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:07:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:07:21 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:07:35 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:07:43 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:07:55 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+Jun 12, 2020 6:08:36 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.06.12 18:09:06 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:10:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:12:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:17:55 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:18:38 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:21:06 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:23:04 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:25:15 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 18:28:20 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 19:58:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 19:58:58 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 19:59:06 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:00:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:00:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:00:57 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Hello.scala
+2020.06.12 20:01:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.12 20:02:34 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 20:05:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:06:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:06:57 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:07:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:07:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:08:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:10:42 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:10:46 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:10:52 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:10:58 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:11:22 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:11:42 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:12:16 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.12 20:14:06 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:15:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:16:43 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 20:19:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.12 23:29:46 INFO  shutting down Metals
+2020.06.13 10:22:37 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.13 10:22:41 INFO  time: initialize in 3.81s
+2020.06.13 10:22:43 INFO  skipping build import with status 'Requested'
+2020.06.13 10:22:43 INFO  no build target: using presentation compiler with only scala-library
+2020.06.13 10:22:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:22:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:27:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:31:51 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:34:53 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:35:24 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:35:55 WARN  code navigation does not work for the file '/home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala' because it doesn't belong to a build target.
+2020.06.13 10:35:55 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:36:54 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:38:25 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:39:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 10:46:17 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:49:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 10:50:02 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:52:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:53:15 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 10:53:54 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 11:29:18 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 11:32:32 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 11:33:42 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 11:42:02 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 11:43:18 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 11:44:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 11:54:53 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 11:57:11 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 14:31:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:32:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:32:21 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 14:32:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:35:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 14:36:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:37:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:38:50 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:39:32 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:40:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:41:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:45:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:48:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:48:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:49:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:54:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 14:55:22 INFO  shutting down Metals
+2020.06.13 15:23:53 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.13 15:23:57 INFO  time: initialize in 4.04s
+2020.06.13 15:23:58 INFO  skipping build import with status 'Requested'
+2020.06.13 15:23:58 INFO  no build target: using presentation compiler with only scala-library
+2020.06.13 15:24:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 15:25:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 15:27:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 15:28:25 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 15:29:24 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 15:29:32 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 15:30:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.13 15:30:30 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.13 15:33:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.13 23:38:50 INFO  shutting down Metals
+2020.06.18 17:55:22 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.18 17:55:26 INFO  time: initialize in 3.7s
+2020.06.18 17:55:28 INFO  skipping build import with status 'Requested'
+2020.06.18 17:55:28 INFO  no build target: using presentation compiler with only scala-library
+2020.06.18 17:55:33 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 17:58:21 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.18 17:58:40 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:01:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 18:02:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 18:03:48 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 18:04:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 18:04:45 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 18:10:17 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:10:50 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:16:33 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:17:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:19:32 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.18 18:21:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:21:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:25:54 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.18 18:30:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 00:35:27 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 00:36:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 00:37:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 00:38:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 00:39:45 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1168, 1168, 1182)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1168, 1168, 1174)
+2020.06.19 00:41:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 00:42:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 00:52:06 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 00:53:34 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 00:55:16 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 00:56:01 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 00:57:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 00:57:44 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in Int => <error>RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1202, 1206, 1227)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in Int => <error>RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1202, 1206, 1227)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in Int => <error>RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1202, 1206, 1227)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in Int => <error>RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1202, 1206, 1225)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala in Int => <error>RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala, 1202, 1206, 1221)
+2020.06.19 01:00:40 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:03:20 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:03:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:08:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:08:24 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:08:24 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:08:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:11:07 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:14:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:16:47 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:18:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:18:52 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:19:46 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:21:03 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:21:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:21:34 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:22:19 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:22:54 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:27:28 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:29:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:31:38 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:34:50 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 01:36:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:37:25 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:39:57 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:40:38 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:40:53 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:42:04 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:42:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:45:26 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 01:52:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:55:28 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 01:58:10 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:01:28 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:04:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:04:30 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:05:46 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:08:07 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:08:18 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:08:46 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 02:12:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:13:20 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:13:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:15:15 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:15:49 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:16:25 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:16:57 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:17:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:17:37 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 02:17:57 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 02:20:13 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 08:45:13 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.19 08:45:17 INFO  time: initialize in 4.2s
+2020.06.19 08:45:19 INFO  skipping build import with status 'Requested'
+2020.06.19 08:45:19 INFO  no build target: using presentation compiler with only scala-library
+2020.06.19 08:45:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 08:45:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 08:45:32 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.19 08:47:54 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 08:52:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 08:53:36 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:18:18 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:19:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:20:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 09:21:33 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:22:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:23:48 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:24:04 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:24:50 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.19 09:25:15 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 09:25:23 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.19 23:52:58 INFO  shutting down Metals
+2020.06.20 15:04:07 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.20 15:04:10 INFO  time: initialize in 3.51s
+2020.06.20 15:04:12 INFO  skipping build import with status 'Requested'
+2020.06.20 15:04:12 INFO  no build target: using presentation compiler with only scala-library
+2020.06.20 15:04:17 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.20 23:33:02 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.20 23:33:05 INFO  time: initialize in 3.54s
+2020.06.20 23:33:10 INFO  skipping build import with status 'Requested'
+2020.06.20 23:33:10 INFO  no build target: using presentation compiler with only scala-library
+2020.06.20 23:33:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.20 23:33:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+Jun 20, 2020 11:33:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Jun 20, 2020 11:33:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Jun 20, 2020 11:41:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59
+2020.06.20 23:41:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.20 23:42:39 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.20 23:43:32 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+Jun 20, 2020 11:43:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 227
+2020.06.20 23:44:55 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.20 23:44:55 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.20 23:45:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.20 23:46:40 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+Jun 21, 2020 12:06:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 402
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1908, 1908, 1916)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1908, 1908, 1916)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1908, 1908, 1916)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1908, 1908, 1916)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1908, 1908, 1917)
+2020.06.21 00:06:30 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1908, 1908, 1917)
+2020.06.21 00:06:41 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 00:08:21 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:08:30 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.21 00:10:07 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:11:08 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.21 00:11:50 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:13:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:13:36 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:16:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:18:29 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:18:56 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:19:51 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:20:00 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 00:21:25 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 1938, 1938, 1947)
+2020.06.21 00:24:06 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 00:24:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 00:24:27 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 14:29:30 INFO  started: Metals version 0.9.0 in workspace '/home/eric/30DaysOfScala/samplescalaproject'
+2020.06.21 14:29:34 INFO  time: initialize in 4.13s
+2020.06.21 14:29:38 INFO  skipping build import with status 'Requested'
+2020.06.21 14:29:38 INFO  no build target: using presentation compiler with only scala-library
+2020.06.21 14:29:42 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+Jun 21, 2020 2:29:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Jun 21, 2020 2:29:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Jun 21, 2020 2:29:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+2020.06.21 14:29:49 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+Jun 21, 2020 2:30:42 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+Jun 21, 2020 2:30:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:417)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:138)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:156)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2070)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2063)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2070)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2063)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[<error>]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2064)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2065)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2065)
+something's wrong: no file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala in List[Int]RangePosition(file:///home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala, 2056, 2056, 2065)
+2020.06.21 14:32:58 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 14:40:01 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 14:40:29 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 14:40:34 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 14:44:44 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 14:45:31 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 14:48:30 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
+2020.06.21 14:49:12 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/FunctionsSpec.scala
+2020.06.21 14:50:14 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/main/scala/example/Functions.scala
+2020.06.21 14:52:05 WARN  no build target for: /home/eric/30DaysOfScala/samplescalaproject/src/test/scala/example/HelloSpec.scala
