@@ -1,3 +1,4 @@
+package example
 object Point {
 
   def stringToInt(x: String): Option[Int] = {
@@ -30,6 +31,6 @@ object SearchIfObjectExtendLang extends App {
   def convertToString(lan: Lang): String = lan match {
 
     case Scala | Java | Python => s"Lang language is good"
-    case _                     => "Not within the language Lang"
+    case _                     => s"Not within the language Lang"
   }
 }
